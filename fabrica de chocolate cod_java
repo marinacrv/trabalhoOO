@@ -1,0 +1,291 @@
+import java.util.Scanner;
+
+import clienta.string;
+
+import java.util.List;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class OPCAO {
+	
+	public static void main(String[] args) {
+		int num;
+		int cont;
+		char nome;
+		char endereco;
+		char telefone;
+		char cacau;
+		char tipo_1;
+		char sabor;
+		float valor_1;
+		char tipo_2;
+		char recheio;
+		float valor_2;
+		char cor;
+		int num_c;
+		float valor_3;
+		int num_c_2;
+		int num_f;
+		char nome_2;
+		float valor_4;
+		char tipo_3;
+		int cep;
+		char cidade;
+		char bairro;
+		char rua;
+		char casa;
+		char pg_forma;
+		char cliente;
+		char produtos;
+		float valor_5;
+		char hora_in;
+		char hora_ext;
+		
+		
+		Scanner ler = new Scanner(System.in);
+        System.out.print("1.Cadastro de novo cliente.\n 2.Cadastro de novo chocolate.\n 3.Cadastro de novo bombom.\n1 4.Cadastro de novo kit.\n 5.Cadastro de nova loja.\n 6.Cadastro de nova trufa.\n 7.Cadastro de novo endereço.\n 8.Cadastro de nova venda.\n 9.Cadastro de novo atendente.\n  10.sair\n Digite o número referente a sua escolha");
+        num = ler.nextInt();
+        if(num == 1) {
+        	System.out.print("Quantos clientes serão cadastrados? \n resp: ");
+        	cont = ler.nextInt();
+        	ArrayList<String> CLIENTES = new ArrayList<>();
+        	do {
+        		System.out.print("Nome: ");
+        		nome = ler.next().charAt(0);
+        		System.out.print("Endereço: ");
+        		endereco = ler.next().charAt(0);
+        		System.out.print("Telefone: ");
+        		telefone = ler.next().charAt(0);
+        		string cliente = cliente.append(nome);
+        		string tel = cliente.append(telefone);
+        		string cep = cliente.append(endereco);
+        		CLIENTES.addAll(cliente);
+                CLIENTES.addAll(tel);
+                CLIENTES.addAll(cep);        
+        		num = num--;
+     
+        	}while(num >0 );
+        	
+        	System.out.print("1.Cadastrar  novo cliente.\n 6.sair\n Digite o número referente a sua escolha");
+            num = ler.nextInt();
+        }else if(num == 2) {
+        	System.out.print("Quantos produtos serão cadastrados? \n resp: ");
+        	cont = ler.nextInt();
+        	ArrayList<String> CHOCOLATE = new ArrayList<>();
+        	do {
+        		System.out.print("Porcentagem de cacu: ");
+        		cacau = ler.next().charAt(0);
+        		System.out.print("sabor: ");
+        		tipo_1 = ler.next().charAt(0);
+        		System.out.print("ti: ");
+        		sabor = ler.next().charAt(0);
+        		System.out.print("valor: ");
+        		valor_1 = ler.next().charAt(0);
+        		string chocolate = chocolate.append(cacau);
+        		string tipo_1 = chocolate.append(tipo_1);
+        		string sabor = chocolate.append(sabor);
+        		string valor_1= chocolate.append(valor_1);
+        		CHOCOLATE.addAll(chocolate);
+        		CHOCOLATE.addAll(tipo);
+        		CHOCOLATE.addAll(sabor);  
+        		CHOCOLATE.addAll(valor_1); 
+        		
+        		num = num--;
+        		}while(num >0 );
+        	
+        	System.out.print("2.Cadastrar  novo chocolate.\n 6.sair\n Digite o número referente a sua escolha");
+            num = ler.nextInt();
+        }else if(num == 3) {
+        	System.out.print("Quantos bobons serão cadastrados? \n resp: ");
+        	cont = ler.nextInt();
+        	ArrayList<String> BOMBOM = new ArrayList<>();
+        	do {
+
+        		System.out.print("tipo: ");
+        		tipo_2 = ler.next().charAt(0);
+        		System.out.print("recheio: ");
+        		recheio = ler.next().charAt(0);
+        		System.out.print("valor: ");
+        		valor_2 = ler.next().charAt(0);
+        		string tipo_2 = BOMBOM.append(tipo_2);
+        		string recheio = BOMBOM.append(recheio);
+        		string valor_2 = BOMBOM.append(valor_2);
+        		BOMBOM.addAll(BOMBOM);
+        		BOMBOM.addAll(tipo_2 );
+        		BOMBOM.addAll(recheio);        
+        		num = num--;
+        		}while(num >0 );
+        	
+        	System.out.print("3.Cadastrar de novo bombom.\n 10.sair\n Digite o número referente a sua escolha");
+            num = ler.nextInt();
+        }else if(num == 4) {
+        	System.out.print("Quantos kits serão cadastrados? \n resp: ");
+        	cont = ler.nextInt();
+        	ArrayList<String> KIT = new ArrayList<>();
+        	do {
+
+        		System.out.print("Número de chocolates: ");
+        		num_c = ler.next().charAt(0);
+        		System.out.print("cor: ");
+        		cor = ler.next().charAt(0);
+        		System.out.print("valor: ");
+        		valor_3 = ler.next().charAt(0);
+        		string num_c = KIT.append(num_c);
+        		string cor = KIT.append(cor);
+        		string valor_3 = KIT.append(valor_3);
+        		KIT.addAll(KIT);
+        		KIT.addAll(num_c);
+        		KIT.addAll(cor); 
+        		KIT.addAll(valor_3);
+        		num = num--;
+        		}while(num >0 );
+        	
+        	System.out.print("4.Cadastrar  novo kit.\n 10.sair\n Digite o número referente a sua escolha");
+            num = ler.nextInt();
+            }else if(num == 5) {
+            	System.out.print("Quantas lojas serão cadastradas? \n resp: ");
+            	cont = ler.nextInt();
+            	ArrayList<String> LOJAS = new ArrayList<>();
+            	do {
+
+            		System.out.print("Número de chocolates: ");
+            		num_c_2 = ler.next().charAt(0);
+            		System.out.print("quantidade de funcionários: ");
+            		num_f = ler.next().charAt(0);
+            		System.out.print("nome da franquia: ");
+            		nome = ler.next().charAt(0);
+            		string num_c_2 = LOJAS.append(num_c);
+            		string num_f = LOJAS.append(cor);
+            		string nome_2 = LOJAS.append(valor_3);
+            		LOJAS.addAll(LOJAS);
+            		LOJAS.addAll(num_c);
+            		LOJAS.addAll(num_f); 
+            		LOJAS.addAll(nome_2);
+            		num = num--;
+            		}while(num >0 );
+            	
+            	System.out.print("5.Cadastrar nova loja.\n 10.sair\n Digite o número referente a sua escolha");
+                num = ler.nextInt();
+            }else if(num == 6) {
+            	System.out.print("Quantas trufas serão cadastradas? \n resp: ");
+            	cont = ler.nextInt();
+            	ArrayList<String> TRUFAS = new ArrayList<>();
+            	do {
+
+            		System.out.print("sabor: ");
+            		sabor_2 = ler.next().charAt(0);
+            		System.out.print("tipo: ");
+            		tipo_3 = ler.next().charAt(0);
+            		System.out.print("valor: ");
+            		valor_4 = ler.next().charAt(0);
+            		string sabor_2 = TRUFAS.append(sabor_2);
+            		string tipo_3 = TRUFAS.append(tipo_3);
+            		string valor_4 = TRUFAS.append(valor_4);
+            		TRUFAS.addAll(TRUFAS);
+            		TRUFAS.addAll(sabor_2);
+            		TRUFAS.addAll(tipo_3); 
+            		TRUFAS.addAll(valor_4);
+            		num = num--;
+            		}while(num >0 );
+            	
+            	System.out.print("6.Cadastrar nova trufa.\n 10.sair\n Digite o número referente a sua escolha");
+                num = ler.nextInt();
+                }else if(num == 7) {
+                	System.out.print("Quantos endereços serão cadastradas? \n resp: ");
+                	cont = ler.nextInt();
+                	ArrayList<String> ENDERECO = new ArrayList<>();
+                	do {
+
+                		System.out.print("cep: ");
+                		cep = ler.next().charAt(0);
+                		System.out.print("cidade: ");
+                		cidade = ler.next().charAt(0);
+                		System.out.print("bairro: ");
+                		bairro = ler.next().charAt(0);
+                		System.out.print("rua: ");
+                		rua = ler.next().charAt(0);
+                		System.out.print("casa: ");
+                		casa = ler.next().charAt(0);
+                		string cep = ENDERECO.append(cep);
+                		string cidade = ENDERECO.append(cidade);
+                		string bairro = ENDERECO.append(bairro);
+                		string rua = ENDERECO.append(rua);
+                		string casa = ENDERECO.append(casa);
+                		ENDERECO.addAll(ENDERECO);
+                		ENDERECO.addAll(cep);
+                		ENDERECO.addAll(cidade); 
+                		ENDERECO.addAll(bairro);
+                		ENDERECO.addAll(rua);
+                		ENDERECO.addAll(casa);
+                		num = num--;
+                		}while(num >0 );
+                	
+                	System.out.print("7.Cadastrar  novo endereço.\n 19.sair\n Digite o número referente a sua escolha");
+                    num = ler.nextInt();
+                    }else if(num == 8) {
+                    	System.out.print("Quantas vendas serão cadastradas? \n resp: ");
+                    	cont = ler.nextInt();
+                    	ArrayList<String> VENDA = new ArrayList<>();
+                    	do {
+
+                    		System.out.print("produtos: ");
+                    		produtos = ler.next().charAt(0);
+                    		System.out.print("valor total: ");
+                    		valor_5 = ler.next().charAt(0);
+                    		System.out.print("cliente: ");
+                    		cliente = ler.next().charAt(0);
+                    		System.out.print("pg_forma: ");
+                    		pg_forma = ler.next().charAt(0);
+                    		string produtos = VENDA.append(produtos);
+                    		string valor_5 = VENDA.append(valor_5);
+                    		string cliente = VENDA.append(cliente);
+                    		string rua = VENDA.append(pg_forma);
+                    		VENDA.addAll(VENDA);
+                    		VENDA.addAll(produtos);
+                    		VENDA.addAll(valor_5); 
+                    		VENDA.addAll(cliente);
+                    		VENDA.addAll(pg_forma);
+                    		num = num--;
+                    		}while(num >0 );
+                    	
+                    	System.out.print("8.Cadastrar nova venda.\n 10.sair\n Digite o número referente a sua escolha");
+                        num = ler.nextInt();
+                        }else if(num == 9) {
+                        	System.out.print("Quantoss atendentes serão cadastradas? \n resp: ");
+                        	cont = ler.nextInt();
+                        	ArrayList<String> ATENDENTE = new ArrayList<>();
+                        	do {
+
+                        		System.out.print("cpf: ");
+                        		cpf = ler.next().charAt(0);
+                        		System.out.print("nome: ");
+                        		nome = ler.next().charAt(0);
+                        		System.out.print("hora de entrada: ");
+                        		hora_in = ler.next().charAt(0);
+                        		System.out.print("hora de saida: ");
+                        		hora_ext = ler.next().charAt(0);
+                        		string cpf = ATENDENTE.append(cpf);
+                        		string nome = ATENDENTE.append(nome);
+                        		string hora_in = ATENDENTE.append(hora_in);
+                        		string hora_ext = ATENDENTE.append(hora_ext);
+                        		ATENDENTE.addAll(ATENDENTE);
+                        		ATENDENTE.addAll(cpf);
+                        		ATENDENTE.addAll(nome); 
+                        		ATENDENTE.addAll(hora_in);
+                        		ATENDENTE.addAll(hora_ext);
+                        		num = num--;
+                        		}while(num >0 );
+                        	
+                        	System.out.print("9.Cadastrar de novo atendente.\n 10.sair\n Digite o número referente a sua escolha");
+                            num = ler.nextInt();
+                            }
+        
+        
+        else if(num == 6) {
+        	System.out.print("Obrigado pela participação!");
+        }
+
+	}
+
+}
